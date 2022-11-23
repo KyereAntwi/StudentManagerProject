@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using StudentManagerProject.Web.Data;
+using StudentManagerProject.Web.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
 
 // services
+
+builder.Services.AddScoped<ISubjectRepository, SubjectRepositoryImp>();
 
 builder.Services.AddRazorPages();
 
