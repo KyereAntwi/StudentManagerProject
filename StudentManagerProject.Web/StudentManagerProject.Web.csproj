@@ -8,7 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="Controllers\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
 
   <ItemGroup>
