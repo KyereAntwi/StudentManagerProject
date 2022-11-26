@@ -5,6 +5,7 @@ namespace StudentManagerProject.Web.Models
 {
     public class Student : IdentityUser
     {
+        public bool Activated { get; set; }
         public Guid ClassGroupId { get; set; }
         [ForeignKey("ClassGroupId")]
         public ClassGroup ClassGroup { get; set; } = default!;

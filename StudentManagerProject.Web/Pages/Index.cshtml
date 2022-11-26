@@ -1,6 +1,59 @@
 ﻿@page
 @model StudentManagerProject.Web.Pages.IndexModel
+
 @{
+    ViewBag.Title = "Welcome Page";
 }
 
-<h1>Hello World - Welcome Page</h1>
+<div class="main-banner">
+    <div class="container">
+        <div class="col-6 offset-3 p-5">
+            <h1 class="main-title">Student Management System</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+                <img style="height:200px" src="https://images.pexels.com/photos/5537517/pexels-photo-5537517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="student">
+                <div class="card-body">
+                    <h5 class="card-title">Visit Student Portal</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="#" class="btn btn-primary">Proceed</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img style="height:200px" src="https://images.pexels.com/photos/5905559/pexels-photo-5905559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="courses">
+                <div class="card-body">
+                    <h5 class="card-title">Browse online courses</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a asp-page="/Courses" class="btn btn-primary">Proceed</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img style="height:200px" src="https://images.pexels.com/photos/7079/people-woman-girl-writing.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="tutor">
+                <div class="card-body">
+                    <h5 class="card-title">Visit Tutor Portal</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Proceed</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img style="height:200px" src="https://images.pexels.com/photos/5537517/pexels-photo-5537517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="#" class="btn btn-primary">Proceed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

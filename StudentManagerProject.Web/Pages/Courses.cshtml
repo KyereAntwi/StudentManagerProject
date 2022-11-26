@@ -1,0 +1,33 @@
+﻿@page
+@model CoursesModel
+@{
+    ViewBag.Title = "All Published Courses";
+}
+
+<div class="courses-banner">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-lg-9 col-sm-12">
+                <h1>Browse all published courses</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-sm-12">
+            @if(Model.courses.Count() > 0)
+            {
+                foreach (var course in Model.courses)
+                {
+                     <partial name="_SinglePartial" model="course" />
+                }
+            }
+            else
+            {
+                <h3 class="text-center text-warning">Sorry! there are no courses to be displayed at this time</h3>
+            }
+        </div>
+    </div>
+</div>

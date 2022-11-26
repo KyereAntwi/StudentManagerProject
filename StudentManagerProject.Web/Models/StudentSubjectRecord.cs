@@ -12,7 +12,7 @@ namespace StudentManagerProject.Web.Models
         public int Semester { get; set; }
         public decimal ClassScore { get; set; }
         public decimal ExamScore { get; set; }
-        public Guid StudentId { get; set; }
+        public string StudentId { get; set; } = string.Empty;
         [ForeignKey("StudentId")]
         public Student Student { get; set; } = default!;
     }

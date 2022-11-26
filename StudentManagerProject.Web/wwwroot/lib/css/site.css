@@ -1,0 +1,33 @@
+﻿body {
+    color: cadetblue;
+}
+
+.main-banner {
+    background-image: url('https://th.bing.com/th/id/R.c3f033eecacd67d840e4718acefa67d1?rik=k%2bjaeTtSP9EGpw&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    width: 100%;
+}
+
+.main-title {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3.8rem;
+    }
+
+.home-card {
+    background-image: url('https://images.pexels.com/photos/5537517/pexels-photo-5537517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.courses-banner {
+    background-image: url('https://th.bing.com/th/id/R.c3f033eecacd67d840e4718acefa67d1?rik=k%2bjaeTtSP9EGpw&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+}
