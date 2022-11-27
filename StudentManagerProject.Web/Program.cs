@@ -11,6 +11,7 @@ var connectionString = builder.Configuration.GetConnectionString("DbContextConne
 builder.Services.AddScoped<ISubjectRepository, SubjectRepositoryImp>();
 builder.Services.AddScoped<IClassGroupRepository, ClassGroupRepositoryImp>();
 builder.Services.AddScoped<ICourseRepository, CourseRepositoryImp>();
+builder.Services.AddScoped<ICourseActivitiesRepository, CourseActivitiesRepositoryImp>();
 
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();

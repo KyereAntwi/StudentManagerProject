@@ -41,8 +41,8 @@
                     else
                     {
                         throw new InvalidOperationException("The default Identity UI layout requires a partial view '_LoginPartial' " +
-                            "usually located at '/Pages/_LoginPartial' or at '/Views/Shared/_LoginPartial' to work. Based on your configuration " +
-                            $"we have looked at it in the following locations: {System.Environment.NewLine}{string.Join(System.Environment.NewLine, result.SearchedLocations)}.");
+                        "usually located at '/Pages/_LoginPartial' or at '/Views/Shared/_LoginPartial' to work. Based on your configuration " +
+                        $"we have looked at it in the following locations: {System.Environment.NewLine}{string.Join(System.Environment.NewLine, result.SearchedLocations)}.");
                     }
                 </div>
             </div>
@@ -50,13 +50,44 @@
     </header>
 
     <partial name="_CookieConsentPartial" optional />
-    <main role="main">
-        @RenderBody()
-    </main>
+
+    <div class="main-banner">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col">
+                    <h1 class="main-title">Tutor Portal</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-3">
+            <ul class="nav flex-column">
+                <li class    ="nav-item"    >
+                    <a class="nav-link" asp-area="Tutor" asp-page="/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Tutor" asp-page="/Courses">Courses</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="T    utor" asp-page="/UpdateInfo">Update Personal Details</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-9">
+                <main role="main">
+                    @RenderBody()
+            </main>
+        </div>
+        </div>
+    </div>
 
     <footer class="footer border-top pl-3 text-muted mt-5 p-3 text-center">
         <div class="container" style="color: white;">
-        &copy; 2022 - StudentManagerProject.Web
+            &copy; 2022 - StudentManagerProject.Web
             @{
                 var foundPrivacy = Url.Page("/Privacy", new { area = "" });
             }

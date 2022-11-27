@@ -31,3 +31,8 @@
     background-position: center;
     width:100%;
 }
+
+footer {
+    background-color: cadetblue;
+    color: white;
+}

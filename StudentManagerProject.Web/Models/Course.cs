@@ -17,5 +17,6 @@ namespace StudentManagerProject.Web.Models
 
         public List<Tutor>? Tutors { get; set; }
         public List<CourseSubTopic>? Chapters { get; set; }
+        public List<CourseActivity>? Activities { get; set; }
     }
 }

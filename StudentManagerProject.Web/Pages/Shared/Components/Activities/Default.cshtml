@@ -1,0 +1,22 @@
+﻿@model ActivitiesViewModel
+
+@if (Model.CourseActivities.Count() > 0)
+{
+    <div class="list-group">
+        @foreach(var activity in Model.CourseActivities)
+        {
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">@activity.Title</h5>
+                    <small>@activity.TimeStamp.ToShortDateString()</small>
+                </div>
+                <p class="mb-1">@activity.Details</p>
+                <small>
+                    <a asp-action="Delete" asp-controller="Activities" asp-route-id="@activity.Id" title="Delete this activity">Delete</a>
+                </small>
+            </a>
+        }
+    </div>
+}
+
+

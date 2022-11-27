@@ -16,6 +16,7 @@ namespace StudentManagerProject.Web.Data
         public DbSet<Tutor> Tutors { get; set; }
         public DbSet<CourseSubTopic> CourseChapters { get; set; }
         public DbSet<CourseParagraph> CourseParagraphs { get; set; }
+        public DbSet<CourseActivity> CourseActivities { get; set; }
 
     }
 }
